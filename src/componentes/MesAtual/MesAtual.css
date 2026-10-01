@@ -1,0 +1,8 @@
+.MesAtual_root {
+  display: flex;
+  justify-content: flex-start;
+  background-color: green;
+  color: white;
+
+  margin: 16px;
+}

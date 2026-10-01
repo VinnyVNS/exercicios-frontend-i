@@ -1,0 +1,9 @@
+.ListaProdutos_root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: purple;
+  color: yellow;
+
+  margin: 16px;
+}

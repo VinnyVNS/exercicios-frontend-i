@@ -1,0 +1,17 @@
+.VerificarIdadeMaior_root {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  color: yellow;
+
+  margin: 16px;
+}
+
+.VerificarIdadeMenor_root {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: yellow;
+
+  margin: 16px;
+}
