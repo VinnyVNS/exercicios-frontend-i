@@ -1,0 +1,8 @@
+.TamanhoTexto_root {
+  display: flex;
+  justify-content: right;
+  background-color: red;
+  color: yellow;
+
+  margin: 16px;
+}

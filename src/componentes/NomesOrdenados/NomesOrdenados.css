@@ -1,0 +1,9 @@
+.NomesOrdenados_root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: pink;
+  color: red;
+
+  margin: 0 16px;
+}

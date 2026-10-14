@@ -1,15 +1,22 @@
 import "./App.css";
 import AnoAtual from "./componentes/AnoAtual/AnoAtual";
+import Calculadora from "./componentes/Calculadora/Calculadora";
 import DataCompletaAtual from "./componentes/DataCompletaAtual/DataCompletaAtual";
 import DiaAtual from "./componentes/DiaAtual/DiaAtual";
+import Divisao from "./componentes/Divisao/Divisao";
 import HoraAtual from "./componentes/HoraAtual/HoraAtual";
 import ListaProdutos from "./componentes/ListaProdutos/ListaProdutos";
 import MesAtual from "./componentes/MesAtual/MesAtual";
 import MinutoAtual from "./componentes/MinutoAtual/MinutoAtual";
+import Multiplicacao from "./componentes/Multiplicacao/Multiplicacao";
+import NomesOrdenados from "./componentes/NomesOrdenados/NomesOrdenados";
+import NumerosImpares from "./componentes/NumerosImpares/NumerosImpares";
+import NumerosPares from "./componentes/NumerosPares/NumerosPares";
 import OlaMundo from "./componentes/OlaMundo/OlaMundo";
 import OlaPessoa from "./componentes/OlaPessoa/OlaPessoa";
 import Soma from "./componentes/Soma/Soma";
 import Subtracao from "./componentes/Subtracao/Subtracao";
+import TamanhoTexto from "./componentes/TamanhoTexto/TamanhoTexto";
 import VerificarIdade from "./componentes/VerificarIdade/VerificarIdade";
 
 function App() {
@@ -91,7 +98,16 @@ function App() {
         letra amarela.
       </span>
 
-      <ListaProdutos />
+      <ListaProdutos
+        produtos={[
+          "Celular Samsung",
+          "Notebook Acer",
+          "Smart TV LG",
+          "Impressora HP",
+          "Tablet Multilaser",
+          "Monitor Dell",
+        ]}
+      />
       <hr />
 
       <span>
@@ -105,6 +121,26 @@ function App() {
 
       <VerificarIdade idade="22" />
       <VerificarIdade idade="17" />
+      <hr />
+
+      <span>
+        11.Crie um componente chamado 'NumerosPares' que aceita uma prop chamada
+        'numeros' e deve ser uma lista de números inteiros. O componente deve
+        mostrar uma lista com os números pares em uma ul com o fundo azul e a
+        letra amarela.
+      </span>
+
+      <NumerosPares numeros={[1, 2, 5, 6, 7, 10, 12, 13, 15, 20, 24, 31]} />
+      <hr />
+
+      <span>
+        12.Crie um componente chamado 'NumerosImpares' que aceita uma prop
+        chamada 'numeros' e deve ser uma lista de números inteiros. O componente
+        deve mostrar uma lista com os números ímpares em uma ul com o fundo azul
+        e a letra amarela.
+      </span>
+
+      <NumerosImpares numeros={[1, 2, 5, 6, 7, 10, 12, 13, 15, 20, 24, 31]} />
       <hr />
 
       <span>
@@ -131,6 +167,51 @@ function App() {
         'num2', o componente deve mostrar: O resultado da divisão entre os dois
         números em uma div com o fundo laranja, texto centralizado na cor azul.
       </span>
+
+      <Divisao num1={15} num2={3} />
+      <hr />
+
+      <span>
+        16.Crie um componente chamado 'Multiplicacao' que aceita as props
+        'num1', 'num2', o componente deve mostrar: O resultado da multiplicação
+        entre os dois números em uma div com o fundo laranja, texto centralizado
+        na cor azul.
+      </span>
+
+      <Multiplicacao num1={4} num2={3} />
+      <hr />
+
+      <span>
+        17.Crie um componente chamado 'Calculadora' que aceita as props 'num1',
+        'num2' e 'operacao'. A 'operacao' deve determinar que tipo de operação
+        matemática que deve ser realizada (ex: soma, subtracao, multiplicacao,
+        divisao). O componente deve mostrar: O resultado da operação entre os
+        dois números em uma div com o fundo verde, texto centralizado na cor
+        branca. Utilize do switch nesse componente.
+      </span>
+
+      <Calculadora num1={10} num2={5} operacao="*" />
+      <hr />
+
+      <span>
+        18.Crie um componente chamado 'TamanhoTexto' que aceita uma prop chamado
+        'texto', o componente deve mostrar: O tamanho do texto informado em uma
+        div com o fundo marrom, texto justificado à direita na cor amarela.
+      </span>
+
+      <TamanhoTexto texto="Olá, meu nome é Vinicius." />
+      <hr />
+
+      <span>
+        19.Crie um componente chamado 'NomesOrdenados' que aceita uma prop
+        chamado 'nomes' e deve ser uma lista com pelo menos 5 nomes de pessoas
+        aleatórias e não ordenada. O componente deve mostrar: Uma lista ordenada
+        dos nomes em ordem alfabética em uma ol com o fundo rosa, texto na cor
+        vermelha. Utilize a função sort para ordenar a lista
+      </span>
+
+      <NomesOrdenados nomes={['Freeman Dickson', 'Maude Stanton', 'Arline Allison', 'Lizzie Patterson', 'Elnora Clarke']} />
+      <hr />
     </>
   );
 }
